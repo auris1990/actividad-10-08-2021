@@ -22,7 +22,7 @@
   grid-template-columns: repeat(3,1fr);
   grid-auto-rows: 150px;
   padding: 20px;
-  grid: gap 10px;
+  grid-gap:10px;
   }
   
   .galeri__item{
