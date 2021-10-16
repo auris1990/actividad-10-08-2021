@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+
+</head>
+<body>
+    
+
+    <div class="container mt-4">
+        <div class="row my-4">
+            <div class="col-8 offset-2 d-flex justify-content-between align-content-center">
+                <p class="fw-bold h1">Lista de Formularios</p>
+                <button class="btn btn-warning" [routerLink]="['/crear-producto']" routerLinkActive="router-link-active"><i class="far fa-bolt"></i>Crear Formulario</button>
+            </div>
+            <div class="col-12 ">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th scope="col">ID</th>
+                            <th scope="col">Tipo de Identificacion</th>
+                            <th scope="col">Numero de Identificacion</th>
+                            <th scope="col">Nombres</th>
+                            <th scope="col">Apellidos</th>
+                            <th scope="col">Numero Telefonico</th>
+                            <th scope="col">Direccion</th>
+                            <th scope="col">Email</th>
+                            <th scope="col">Genero</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Cedula de Ciudadania</td>
+                            <td> 88765987</td>
+                            <td>Juan Steban </td>
+                            <td>Gomez Ruiz</td>
+                            <td> 3136547864</td>
+                            <td>calle 20</td>
+                            <td>goruiz@gmail.com</td>
+                            <td>Masculino</td>
+
+                            <td>
+                                <i class="fas fa-pen" [routerLink]="['/editar-producto/1']" routerLinkActive="router-link-active"></i>
+                                <i class="fas fa-trash"></i>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Cedula de Ciudadania</td>
+                            <td> 78795980</td>
+                            <td> Lina Sol </td>
+                            <td> Torres Paez</td>
+                            <td> 3216567810</td>
+                            <td>calle 22</td>
+                            <td>lis@gmail.com</td>
+                            <td> Femenino</td>
+                            <td>
+                                <i class="fas fa-pen" [routerLink]="['/editar-producto/2']" routerLinkActive="router-link-active"></i>
+                                <i class="fas fa-trash"></i>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>3</td>
+                            <td>Cedula de Extrangeria</td>
+                            <td> 108791980</td>
+                            <td> Ronald </td>
+                            <td> Duran Osorio</td>
+                            <td> 3113568803</td>
+                            <td> calle 29</td>
+                            <td> roldo@gmail.com</td>
+                            <td> LGTBI</td>
+                          <td>
+                                <i class="fas fa-pen" [routerLink]="['/editar-producto/2']" routerLinkActive="router-link-active"></i>
+                                <i class="fas fa-trash"></i>
+                            </td>
+                        </tr>
+
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    
+    </div>
+    
+        
+    
+    
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+
+</body>
+</html>
