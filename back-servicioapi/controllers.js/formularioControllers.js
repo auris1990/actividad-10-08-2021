@@ -82,7 +82,7 @@ try{
 
 exports.encontrarFormulario = async(req, res) => {
     try {
-        let data_producto = await Formulario.findById(req.params.id);
+        let data_formulario = await Formulario.findById(req.params.id);
 
         if (!data_formulario) {
             res.status(404).json({ msg: 'No existe el formulario que solicitas' });
